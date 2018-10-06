@@ -5,3 +5,4 @@ This application have a feature for:
 - Tracking location
 - Calculating waypoint
 - Calculating sales achievement
+- And many more
