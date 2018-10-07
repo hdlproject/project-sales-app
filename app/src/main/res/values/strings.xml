@@ -1,0 +1,102 @@
+<resources>
+    <!--application text-->
+    <string name="app_name">Sales-AP</string>
+    <string name="app_version">v0.0.1 / 20170820</string>
+    <string name="app_copyright">Copyright \u00A9 (2017) HDL Project</string>
+
+    <!--login text-->
+    <string name="label_login_desc">Login to Sales Application Product</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_loginid">Login ID</string>
+    <string name="button_login">LOGIN</string>
+    <string name="button_exit">EXIT</string>
+    <string name="label_show_password">Show Password</string>
+    <string name="label_signup">No account yet? Create one</string>
+    <string name="label_info">INFO</string>
+    <string name="message_exit_alert">Are you sure you want to exit application?</string>
+    <string name="label_yes">YES</string>
+    <string name="label_no">NO</string>
+    <string name="message_please_wait">Please wait ...</string>
+
+    <!--synchronize text-->
+    <string name="label_done_status">Done</string>
+    <string name="label_progress_status">On Progress</string>
+    <string name="label_wait_status">Wait</string>
+
+    <!--welcome text-->
+    <string name="label_default_user_name">User Full Name</string>
+    <string name="label_default_job_name">User Job</string>
+    <string name="label_default_office_name">User Office</string>
+    <string name="label_default_branch_name">User Office Branch</string>
+    <string name="label_default_selling_target">Selling Target :</string>
+    <string name="label_default_current_gain">Current Gain :</string>
+    <string name="label_default_news_holder">Today news is comming soon - - - - - - - - - - - - - - - - - - - - - - - - - -</string>
+    <string name="message_logout_alert">Are you sure you want to log out application?</string>
+    <string name="label_change_password">Change Password</string>
+    <string name="hint_old_password">Old Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="hint_conf_new_password">Confirm New Password</string>
+    <string name="label_cap_change_password">CHANGE PASSWORD</string>
+    <string name="message_change_password_alert">Password has changed successfully.
+        \nYou are attempted to log out application.</string>
+
+    <!--notification text-->
+    <string name="label_task_notification">Task Notification</string>
+    <string name="message_task_notification">You have %1$d new task today</string>
+    <string name="label_task_list">TASK LIST</string>
+    <string name="label_cap_waypoints">WAYPOINTS</string>
+    <string name="label_waypoints">Waypoints</string>
+
+    <!--task list text-->
+    <string name="label_default_null">-</string>
+    <string name="label_default_task">Task</string>
+    <string name="label_add_task">Add Task</string>
+    <string name="hint_cust_name">Customer Name</string>
+    <string name="hint_dest_address">Customer Address</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="label_cap_add_task">ADD TASK</string>
+    <string name="label_latitude">Latitude</string>
+    <string name="label_longitude">Longitude</string>
+
+    <!--maps text-->
+    <string name="label_activity_maps">Map</string>
+    <string name="label_marker">Customer Location</string>
+    <string name="label_address">Customer Address</string>
+    <string name="label_locality">Customer Locality</string>
+
+    <!--selling report text-->
+    <string name="hint_product_name">Product Name</string>
+    <string name="hint_product_count">Cnt</string>
+    <string name="label_total_count">Total Cnt</string>
+    <string name="hint_product_price">Price</string>
+    <string name="label_total_price">Total Price</string>
+    <string name="label_control_button">Control Button</string>
+    <string name="message_delete_all_alert">Are you sure you want to delete all item?</string>
+    <string name="message_loc_not_valid_alert">Your current location is not allowed to submit data.
+        \nDo you want to go to valid location?</string>
+    <string name="label_ok">OK</string>
+
+    <!--barcode scanner text-->
+    <string name="message_permission_camera_alert">Access to the camera is needed for detection</string>
+    <string name="message_low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="message_no_camera_permission_error">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+
+    <!--rasult page text-->
+    <string name="message_tap_instruction">Tap the icon to go back</string>
+    <string name="message_request_failed">Your submit request is failed.
+        \nPlease try again later.</string>
+    <string name="message_connection_failed">Your have no internet connection.
+        \nPlease connect to internet and try again.</string>
+
+    <!--waypoints text-->
+    <string name="message_waypoints_notification">Duration: %1$d seconds
+        \nDistance: %2$d meters
+        \nThat is distance estimation of your job today.
+        \nYou can finish your job as fast as possible within duration.
+        \nHappy working. Good luck!</string>
+    <string name="google_maps_key_server" templateMergeStrategy="preserve" translatable="false">
+        <!--YOUR_KEY_HERE-->
+        AIzaSyCyUKEtwYIhHxcmnhK5v_Y3vzEhdEBkGwA
+    </string>
+
+</resources>

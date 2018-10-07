@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/listLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLayout">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sellingReportListAdapter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/narrow2_margin"
+            android:layout_marginRight="@dimen/narrow2_margin"
+            app:layoutManager="LinearLayoutManager"
+            tools:listitem="@layout/selling_report_item" />
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_gradient_textview_background"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_toLeftOf="@+id/controlButtonLayout" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/narrow_margin"
+                android:layout_marginRight="@dimen/narrow_margin">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_total_price"
+                    android:textColor="@color/tv_white"/>
+                <EditText
+                    android:id="@+id/totalPriceText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textColor="@color/tv_darker"
+                    android:background="@drawable/custom_edittext_background" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/narrow_margin"
+                android:layout_marginRight="@dimen/narrow_margin">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_total_count"
+                    android:textColor="@color/tv_white"/>
+                <EditText
+                    android:id="@+id/totalCountText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textColor="@color/tv_darker"
+                    android:background="@drawable/custom_edittext_background"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/controlButtonLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_control_button"
+                android:textColor="@color/tv_white"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/submitImage"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="@dimen/narrow2_margin"
+                    android:src="@drawable/submit_icon"/>
+                <ImageView
+                    android:id="@+id/addListImage"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="@dimen/narrow2_margin"
+                    android:src="@drawable/add_icon"/>
+                <ImageView
+                    android:id="@+id/deleteAllListImage"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="@dimen/narrow2_margin"
+                    android:src="@drawable/delete_all_icon"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

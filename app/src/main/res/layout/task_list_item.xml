@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bgGridPriority"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/narrow_margin"
+    android:background="@drawable/blue_gradient_button_background"
+    android:clickable="false" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/assignDateLabel"
+            android:layout_marginLeft="@dimen/narrow_margin"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_default_null"
+            android:textColor="@color/tv_white"
+            android:textSize="8dp" />
+
+        <ImageView
+            android:id="@+id/mapsImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/gmaps_icon" />
+
+        <ImageView
+            android:id="@+id/reportImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/mapsImage"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/report_icon" />
+
+        <ImageView
+            android:id="@+id/taskIconImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/narrow2_margin"
+            android:background="#90FFFFFF"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/taskNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/taskIconImage"
+            android:text="@string/label_default_task"
+            android:textColor="@color/tv_white"
+            android:textSize="8dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/custNameLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/label_default_null"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/tv_white"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/phoneNumbLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/label_default_null"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/tv_white"
+            android:textSize="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/imageHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/header_image"
+        android:scaleType="centerCrop" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/medium_margin" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/profileLayout"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:background="#90FFFFFF"
+                    android:padding="@dimen/narrow2_margin"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/editProfileImage"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignBottom="@+id/profileImage"
+                    android:layout_alignRight="@+id/profileImage"
+                    android:layout_margin="@dimen/medium_margin"
+                    android:src="@drawable/edit_profile_button" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:background="#AAFFFFFF" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/nameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/tv_darker"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="5"
+                    android:text="@string/label_default_user_name"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/tv_white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/jobLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:shadowColor="@color/tv_darker"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="5"
+                    android:text="@string/label_default_job_name"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/tv_white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/officeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:shadowColor="@color/tv_darker"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="5"
+                    android:text="@string/label_default_office_name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/tv_white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/branchLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:shadowColor="@color/tv_darker"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="5"
+                    android:text="@string/label_default_branch_name"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/tv_white"/>
+                <TextView
+                    android:id="@+id/targetLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:shadowColor="@color/tv_darker"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="5"
+                    android:text="@string/label_default_selling_target"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/tv_white"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/currentGainLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:shadowColor="@color/tv_darker"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="5"
+                    android:text="@string/label_default_current_gain"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/tv_white"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/editProfileData"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignBottom="@+id/profileImage"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="@dimen/narrow2_margin"
+            android:src="@drawable/edit_profile_button" />
+    </FrameLayout>
+</RelativeLayout>

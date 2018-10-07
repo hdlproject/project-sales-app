@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grayscale_background"
+    android:padding="@dimen/medium_margin">
+
+    <EditText
+        android:id="@+id/custNameText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_cust_name"
+        android:singleLine="true"
+        android:textColor="@color/tv_darker"
+        android:textColorHint="@color/tv_darker"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:background="@drawable/custom_edittext_background">
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:id="@+id/destAddressText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:ems="10"
+        android:hint="@string/hint_dest_address"
+        android:singleLine="true"
+        android:textColor="@color/tv_darker"
+        android:textColorHint="@color/tv_darker"
+        android:background="@drawable/custom_edittext_background" />
+    <EditText
+        android:id="@+id/phoneNumbText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:ems="10"
+        android:hint="@string/hint_phone_number"
+        android:singleLine="true"
+        android:textColor="@color/tv_darker"
+        android:textColorHint="@color/tv_darker"
+        android:background="@drawable/custom_edittext_background" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_latitude"/>
+    <EditText
+        android:id="@+id/latText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:ems="10"
+        android:hint="@string/label_default_null"
+        android:singleLine="true"
+        android:textColor="@color/tv_darker"
+        android:textColorHint="@color/tv_darker"
+        android:enabled="false"
+        android:background="@drawable/custom_edittext_background" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_longitude"/>
+    <EditText
+        android:id="@+id/lonText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:ems="10"
+        android:hint="@string/label_default_null"
+        android:singleLine="true"
+        android:textColor="@color/tv_darker"
+        android:textColorHint="@color/tv_darker"
+        android:enabled="false"
+        android:background="@drawable/custom_edittext_background" />
+    <Button
+        android:id="@+id/addTaskButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_gradient_button_background"
+        android:text="@string/label_cap_add_task"
+        android:textColor="@color/tv_white"/>
+</LinearLayout>

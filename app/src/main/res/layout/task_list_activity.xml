@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="com.project.hdl.salesap.main.tasklist.TaskListActivity"
+    tools:context="com.project.hdl.salesap.main.tasklist.TaskListActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/narrow2_margin">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="4dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/taskListAdapter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/narrow2_margin"
+            android:layout_marginRight="@dimen/narrow2_margin"
+            app:layoutManager="GridLayoutManager"
+            tools:listitem="@layout/task_list_item" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newsHolderLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_gradient_textview_background"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/medium_margin"
+    android:paddingLeft="@dimen/medium_margin"
+    android:paddingTop="@dimen/narrow2_margin"
+    android:paddingBottom="@dimen/narrow2_margin">
+
+    <TextView
+        android:id="@+id/newsLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_default_news_holder"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="@color/tv_white"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</LinearLayout>
